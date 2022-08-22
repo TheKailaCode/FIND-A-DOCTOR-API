@@ -194,41 +194,60 @@ const willingDoctors = {
         city: 'Abington',
         state: 'Pennsylvania'
     },
-    '': {
-        city: '',
-        state: ''
+    'Mariola Llinas': {
+        city: 'San Juan',
+        state: 'Puerto Rico'
     },
-    '': {
-        city: '',
-        state: ''
+    'Beth Cronin': {
+        city: 'Providence',
+        state: 'Rhode Island'
     },
-    '': {
-        city: '',
-        state: ''
+    'Dianna Ravenell': {
+        city: 'Columbia',
+        state: 'South Carolina'
     },
-    '': {
-        city: '',
-        state: ''
+    'Breanne Mueller': {
+        city: 'Aberdeen ',
+        state: 'South Dakota'
     },
-    '': {
-        city: '',
-        state: ''
+    'Erin Black': {
+        city: 'Knoxville',
+        state: 'Tennesee'
     },
-    '': {
-        city: '',
-        state: ''
+    'Romy Ghosh': {
+        city: 'Austin',
+        state: 'Texas'
     },
-    '': {
-        city: '',
-        state: ''
+    'Amanda Cleveland': {
+        city: 'Salt Lake City',
+        state: 'Utah'
     },
-    '': {
-        city: '',
-        state: ''
+    'Sarah Decker': {
+        city: 'Rutland',
+        state: 'Vermont'
     },
-    '': {
-        city: '',
-        state: ''
+    'Jennifer Doorey': {
+        city: 'Charlottesville ',
+        state: 'Virginia'
     },
-
+    'Pilar Baquero-Young': {
+        city: 'Issaquah ',
+        state: 'Washington'
+    },
+    'Alex Poulsen': {
+        city: 'Charleston',
+        state: 'West Virginia'
+    },
+    'Gretchen Augustine': {
+        city: 'Appleton, Neenah, Shawano',
+        state: 'Wisconsin'
+    },
+    'Lindsay Capron': {
+        city: 'Sheridan ',
+        state: 'Wyoming'
+    },
 }
+
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`Server running on port ${PORT}`)
+})
