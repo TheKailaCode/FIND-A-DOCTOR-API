@@ -1,11 +1,12 @@
 const express = require('express')
-const app = expres()
+const app = express()
 const cors = require('cors')
+const { response } = require('express')
 const PORT = 8000
 
 app.use(cors())
 
-const willingDoctors = {
+const doctors = {
     'George Zaharias': {
         city: 'Alabaster',
         state: 'Alabama'
@@ -247,6 +248,23 @@ const willingDoctors = {
         state: 'Wyoming'
     },
 }
+
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html')
+})
+
+app.get('/api/:stateName', (req, res) => {
+    const stateName = req.params.stateName.toLowerCase()
+    if (doctors[stateName]) {
+        res.json(doctors[stateName])
+    } else {
+        res.json(doctors)
+    }
+})
+
+
+
+
 
 app.listen(process.env.PORT || PORT, () => {
     console.log(`Server running on port ${PORT}`)
