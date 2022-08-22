@@ -1,0 +1,4 @@
+Need to add more explanation to HTML
+figure out how to search by state
+create text box for the API to be used
+create readme

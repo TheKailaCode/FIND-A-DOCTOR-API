@@ -254,9 +254,9 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api/:stateName', (req, res) => {
-    const stateName = req.params.stateName.toLowerCase()
-    if (doctors[stateName]) {
-        res.json(doctors[stateName])
+    const stateNames = req.params.stateName.toLowerCase()
+    if (doctors[stateNames]) {
+        res.json(doctors[stateNames])
     } else {
         res.json(doctors)
     }
